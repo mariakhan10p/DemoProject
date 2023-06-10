@@ -1,9 +1,7 @@
 <suite name = "Test Priority Cases">
-
     <test name ="Smoke Test">
-        <classes preserve-order="true">
+        <classes>
             <class name = "com.TenPearls.demoproject.Tests.Chapter1_Tests"/>
         </classes>
     </test>
-
 </suite>

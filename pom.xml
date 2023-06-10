@@ -20,6 +20,7 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.0.0-beta3</version>
+            <scope>compile</scope>
         </dependency>
 
         <dependency>
@@ -31,6 +32,10 @@
 
 
     </dependencies>
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
 
     <build>
         <plugins>
@@ -43,6 +48,9 @@
                     <includes>
                         <include>com.TenPearls.demoproject.Tests.Chapter1_Tests</include>
                     </includes>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src/test/java/com/TenPearls/Runner.xml</suiteXmlFile>
+                    </suiteXmlFiles>
                 </configuration>
             </plugin>
         </plugins>
